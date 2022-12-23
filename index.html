@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b43e8c7f41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <img src="image/professional pic.jpg">
+            <h1>Hi, I'm <span>Teesha</span><br>Bhagat From India</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/intro img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub title">LET ME INTRODUCE MYSELF</h1>
+                <p>Hello!! I'm Teesha Bhagat,2nd year Artifical intelligence And Data Science B.Tech Student at Samrat Ashok Techological Institute Vidisha, Bhopal, (M.P.),INDIA. I knew C,C++ Language,Html,CSS, have some idea of Web development, Interested in Data Scientist. Currently I am Exploring different field of computer science and Learning new things.</p>
+           </div>
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-List">
+            <div>
+                <img src="image/c-programming-logo.png">
+                <h2>C</h2>    
+            </div>
+            <div>
+                <img src="image/c++-programming-logo.png">
+                <h2>C++</h2>    
+            </div>
+            <div>
+                <img src="image/programming-python.jpg">
+                <h2>python</h2>
+            </div>
+            <div>
+                <img src="image/logo_html.png">
+                <h2>html</h2>
+            </div>
+            
+            
+            <div>
+                <img src="image/css logo.jpeg">
+                <h2>css</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Education">
+    <div class="container">
+        <h1 class="sub-title">My Education</h1>
+        <div class="Education-list">
+            <div class="Education">
+                <img src="image/sati image1.jpg"> 
+                <div class="layer">
+                    <h3>Samrat Ashok Technological Institute</h3>
+                    <p>Bachelor of Technology.</p>
+                    <p>AIADS,CS AND IT DEPARTMENT,2 year, 2022-present</p>
+                </div>
+            </div>
+            <div class="Education">
+                <img src="image/new vision.jpeg"> 
+                <div class="layer">
+                    <h3>New vision Higher Secondary School,Burhanpur,M.P.</h3>
+                    <p>Higher Secondary School,class 12th,2020-2021.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> teeshahagat115@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9302503032</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/teesha.bhagat.9?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/TeeshaBhagat?t=l_RF3-Dw6fyXgQj6T-8IGw&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/teesha_bhagat?igshid=MWM2YjBjM2Q="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/teesha-bhagat-b147361b6"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/teeshabhagat"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="image/my cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>        
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        Document.getElementsById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
